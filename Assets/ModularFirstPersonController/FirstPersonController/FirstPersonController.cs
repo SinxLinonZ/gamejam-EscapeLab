@@ -118,6 +118,13 @@ public class FirstPersonController : MonoBehaviour
     #endregion
     #endregion
 
+    public static FirstPersonController Instance;
+
+    public static bool getIsCrouched()
+    {
+        return Instance.isCrouched;
+    } 
+
     #region Head Bob
 
     public bool enableHeadBob = true;
@@ -133,6 +140,14 @@ public class FirstPersonController : MonoBehaviour
 
     private void Awake()
     {
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        
+        Instance = this;
+        
         rb = GetComponent<Rigidbody>();
 
         crosshairObject = GetComponentInChildren<Image>();
