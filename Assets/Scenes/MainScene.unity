@@ -1019,7 +1019,8 @@ GameObject:
   - component: {fileID: 141613745}
   - component: {fileID: 141613744}
   - component: {fileID: 141613743}
-  - component: {fileID: 141613742}
+  - component: {fileID: 141613746}
+  - component: {fileID: 141613747}
   m_Layer: 0
   m_Name: Quad
   m_TagString: Untagged
@@ -1027,20 +1028,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &141613742
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 141613741}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &141613743
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1099,13 +1086,41 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 141613741}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 18.813, y: 2.918, z: -74.269}
+  m_LocalPosition: {x: 19.012, y: 2.918, z: -74.269}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
+--- !u!114 &141613746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141613741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a938b1f927d492641953aa1e062f74f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: You find a symbol!!
+  isInteractable: 0
+  interactiveEvent: 
+--- !u!65 &141613747
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141613741}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000002, y: 1, z: 0.110881746}
+  m_Center: {x: 1.868523e-17, y: 0, z: 0.012135743}
 --- !u!1001 &147476894
 PrefabInstance:
   m_ObjectHideFlags: 0
